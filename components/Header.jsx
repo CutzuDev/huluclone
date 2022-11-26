@@ -11,8 +11,8 @@ import {
 
 function Header() {
   return (
-    <header className="">
-      <div className="flex flex-grow justify-evenly">
+    <header className="flex flex-col sm:flex-row justify-between items-center m-5 h-auto">
+      <div className="flex flex-grow justify-evenly max-w-2xl">
         <HeaderItem title={"HOME"} Icon={HomeIcon} />
         <HeaderItem title={"TRENDING"} Icon={BoltIcon} />
         <HeaderItem title={"VERIFIED"} Icon={CheckBadgeIcon} />
@@ -23,6 +23,7 @@ function Header() {
       <Image
         src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png"
         className="object-contain"
+        alt="sugeo"
         width={200}
         height={100}
       />
